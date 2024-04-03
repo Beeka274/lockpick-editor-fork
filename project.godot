@@ -31,6 +31,7 @@ NodePool="*res://misc/node_pool.gd"
 [debug]
 
 gdscript/warnings/shadowed_global_identifier=0
+gdscript/warnings/unreachable_code=0
 gdscript/warnings/static_called_on_instance=0
 gdscript/warnings/redundant_await=0
 gdscript/warnings/assert_always_true=2

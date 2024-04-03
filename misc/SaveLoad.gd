@@ -11,7 +11,8 @@ const VC := V4
 const LEVEL_EXTENSIONS := ["res", "tres", "lvl", "png"]
 
 static func get_data(level_pack: LevelPackData) -> PackedByteArray:
-	var path := level_pack.file_path
+	#; probably important?
+	#var path := level_pack.file_path
 	var data: PackedByteArray
 	# SHOULDN'T SUPPORT THIS. it makes loading images/data ambiguous!
 #	if path == "":
@@ -68,7 +69,8 @@ static func save_level(level_pack: LevelPackData) -> void:
 
 # Loads a .lvl file
 static func load_from(path: String) -> LevelPackData:
-	var pack_data: LevelPackData = null
+	#; probably important?
+	#var pack_data: LevelPackData = null
 	
 	var version: int = -1
 	var original_editor_version := ""

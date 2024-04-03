@@ -104,7 +104,8 @@ func reset() -> void:
 
 # TODO: the way undos would work here would make each individual affected door take up an action! oh no! either merge them or apply them all at once.
 func apply_auras_on_door(door: Door) -> void:
-	var door_data := door.door_data
+	#; probably important?
+	#var door_data := door.door_data
 	if key_counts[Enums.colors.red].real_part >= 1:
 		if apply_curse_door(door, Enums.curse.ice, false):
 			door.break_curse_ice()
